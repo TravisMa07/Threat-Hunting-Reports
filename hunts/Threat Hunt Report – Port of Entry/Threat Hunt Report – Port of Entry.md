@@ -53,28 +53,28 @@ The following report outlines the cyber kill chain, mapping it to MITRE ATT&CK, 
 
 ## MITRE ATT&CK Summary
 
-| Flag | Technique Category | MITRE ID | Priority |
+| Flag | Technique Category | MITRE ID | Tactic |
 |-----:|-------------------|----------|----------|
-| 1 | <Placeholder> | <Placeholder> | <Placeholder> |
-| 2 | <Placeholder> | <Placeholder> | <Placeholder> |
-| 3 | <Placeholder> | <Placeholder> | <Placeholder> |
-| 4 | <Placeholder> | <Placeholder> | <Placeholder> |
-| 5 | <Placeholder> | <Placeholder> | <Placeholder> |
-| 6 | <Placeholder> | <Placeholder> | <Placeholder> |
-| 7 | <Placeholder> | <Placeholder> | <Placeholder> |
-| 8 | <Placeholder> | <Placeholder> | <Placeholder> |
-| 9 | <Placeholder> | <Placeholder> | <Placeholder> |
-| 10 | <Placeholder> | <Placeholder> | <Placeholder> |
-| 11 | <Placeholder> | <Placeholder> | <Placeholder> |
-| 12 | <Placeholder> | <Placeholder> | <Placeholder> |
-| 13 | <Placeholder> | <Placeholder> | <Placeholder> |
-| 14 | <Placeholder> | <Placeholder> | <Placeholder> |
-| 15 | <Placeholder> | <Placeholder> | <Placeholder> |
-| 16 | <Placeholder> | <Placeholder> | <Placeholder> |
-| 17 | <Placeholder> | <Placeholder> | <Placeholder> |
-| 18 | <Placeholder> | <Placeholder> | <Placeholder> |
-| 19 | <Placeholder> | <Placeholder> | <Placeholder> |
-| 20 | <Placeholder> | <Placeholder> | <Placeholder> |
+| 1 | Remote Services (Remote Desktop Protocol) | T1021.001 | Initial Access |
+| 2 | Valid Accounts | T1078 | Initial Access |
+| 3 | System Network Configuration Discovery | T1016 | Discovery |
+| 4 | Data Staged: Local Data Staging | T1074.001 | Collection |
+| 5 | Impair Defenses: Disable or Modify Tools | T1562.001 | Defense Evasion |
+| 6 | Impair Defenses: Disable or Modify Tools | T1562.001 | Defense Evasion |
+| 7 | Impair Defenses: Disable or Modify Tools | T1562.001 | Defense Evasion |
+| 8 | Scheduled Task/Job: Scheduled Task | T1053.005 | Persistence |
+| 9 | Scheduled Task/Job: Scheduled Task | T1053.005 | Persistence |
+| 10 | Application Layer Protocol: Web Protocols | T1071.001 | Command and Control |
+| 11 | Application Layer Protocol: Web Protocols | T1071.001 | Command and Control |
+| 12 | OS Credential Dumping: LSASS Memory | T1003.001 | Credential Access |
+| 12 | OS Credential Dumping: LSASS Memory | T1003.001 | Credential Access |
+| 14 | Archive Collected Data: Archive via Utility | T1560.001 | Collection |
+| 15 | Exfiltration Over Web Service | T1567 | Exfiltration |
+| 16 | Indicator Removal: Clear Windows Event Logs | T1070.001 | Defense Evasion |
+| 17 | Create Account: Local Account | T1136.001 | Persistence |
+| 18 | Command and Scripting Interpreter: PowerShell | T1059.001 | Execution |
+| 19 | Use Alternate Authentication Material | T1550 | Lateral Movement |
+| 20 | Remote Services: Remote Desktop Protocol | T1021.001 | Lateral Movement |
 
 ---
 
