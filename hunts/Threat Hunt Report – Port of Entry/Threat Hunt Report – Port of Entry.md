@@ -88,19 +88,27 @@ _All flags below are collapsible for readability._
 <summary id="flag-1"><strong>Flag 1: <Technique Name></strong></summary>
 
 ### Objective
-<What the attacker was trying to accomplish>
+Identifying inital access point of the adversary via Remote Desktop Protocol (RDP) connection.
 
 ### Finding
-<High-level description of the activity>
+Unauthorize logon via RDP from source IP address `88.97.178.12`.
 
 ### KQL Query
-<KQL query use>
+```kql
+DeviceLogonEvents
+| where TimeGenerated between (datetime(2025-11-19) .. datetime(2025-11-20))
+| where ActionType == "LogonSuccess"
+| where LogonType == "RemoteInteractive"
+| where isnotempty(RemoteIP)
+| project TimeGenerated, AccountDomain, AccountName, ActionType, DeviceName, LogonType, Protocol, RemoteIP
+```
 
 ### Evidence
-<screenshot of logs>
+<img width="608" height="97" alt="image" src="https://github.com/user-attachments/assets/ccabb9fd-a1be-45dd-af22-2d21ce152060" />
+
 
 ### Why it Matters
-<impact of the attack and its context with defender relevance>
+RDP connections leave network traces that identify the source of the unauthorized access and the device compromised. Determining the origin helps with threat actor attribution and blocking ongoing attacks.
 
 </details>
 
